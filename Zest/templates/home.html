@@ -1,0 +1,386 @@
+
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+  <head>
+    <title>CellZest</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="{% static 'index1/css/animate.css' %}">
+
+    <link rel="stylesheet" href="{% static 'index1/css/owl.carousel.min.css' %} ">
+    <link rel="stylesheet" href="{% static 'index1/css/owl.theme.default.min.css' %}">
+    <link rel="stylesheet" href="{% static 'index1/css/magnific-popup.css' %}">
+
+    <link rel="stylesheet" href="{% static 'index1/css/bootstrap-datepicker.css' %}">
+    <link rel="stylesheet" href="{% static 'index1/css/jquery.timepicker.css' %}">
+
+    <link rel="stylesheet" href="{% static 'index1/css/flaticon.css' %}">
+    <link rel="stylesheet" href="{% static 'index1/css/style.css' %}">
+  </head>
+  <body>
+		<div class="wrap">
+			<div class="container">
+				<div class="row justify-content-between">
+						<div class="col d-flex align-items-center">
+							<p class="mb-0 phone"><span class="mailus">Phone no:</span> <a href="#">+00 1234 567</a> or <span class="mailus">email us:</span> <a href="#">emailsample@email.com</a></p>
+						</div>
+						<div class="col d-flex justify-content-end">
+							<div class="social-media">
+				    		<p class="mb-0 d-flex">
+				    			<a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-facebook"><i class="sr-only">Facebook</i></span></a>
+				    			<a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-twitter"><i class="sr-only">Twitter</i></span></a>
+				    			<a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-instagram"><i class="sr-only">Instagram</i></span></a>
+				    			<a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-dribbble"><i class="sr-only">Dribbble</i></span></a>
+				    		</p>
+			        </div>
+						</div>
+				</div>
+			</div>
+		</div>
+		<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+	    <div class="container">
+	    	<a class="navbar-brand" href="index.html">Cell<span>Zest<i class="fa fa-leaf"></i></span></a>
+	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="fa fa-bars"></span> Menu
+	      </button>
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav ml-auto">
+	        	<li class="nav-item active"><a href="{% url 'home' %}" class="nav-link">Home</a></li>
+	        	<li class="nav-item"><a href="{% url 'about' %}" class="nav-link">About</a></li>
+
+
+
+	          <li class="nav-item"><a href="{% url 'blog' %}" class="nav-link">Anemia</a></li>
+	          <li class="nav-item"><a href="{% url 'contact' %}" class="nav-link">Contact</a></li>
+		      <a href="{% url 'index' %}"><button style="margin-top:20px" class="btn btn-success">Check health</button></a>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+    <!-- END nav -->
+
+    <div class="hero-wrap js-fullheight">
+    <div class="home-slider owl-carousel js-fullheight">
+        <!-- Removed the first slider item -->
+
+        <div class="slider-item js-fullheight" style="background-image:url({% static 'index1/images/f.png' %});">
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="row no-gutters slider-text align-items-center justify-content-end">
+                    <div class="col-md-7 ftco-animate">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Removed the third slider item -->
+    </div>
+</div>
+    <section class="ftco-section ftco-services">
+    	<div class="container">
+    		<div class="row">
+          <div class="col-md-4 d-flex services align-self-stretch px-4 ftco-animate">
+            <div class="d-block services-wrap text-center">
+              <div class="img" style="background-image: url({% static 'index1/images/nutri.jpeg' %});"></div>
+              <div class="media-body p-2 mt-3">
+                <h3 class="heading">Nutrition Plans</h3>
+                <p>For anemia, focus on iron-rich foods like red meat, legumes, and leafy greens. Include Vitamin C-rich foods like citrus fruits to improve iron absorption. Add folate-rich foods like spinach and lentils, and ensure enough Vitamin B12 from meat, fish, and eggs. A balanced diet with these foods can help manage anemia, but it’s important to consult a healthcare provider for personalized advice.</p>
+
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex services align-self-stretch px-4 ftco-animate">
+            <div class="d-block services-wrap text-center">
+              <div class="img" style="background-image: url({% static 'index1/images/exe.jpeg' %});"></div>
+              <div class="media-body p-2 mt-3">
+
+                <h3 class="heading">Exercise Program</h3>
+                <p>Exercise can help boost energy and circulation in people with anemia, but it’s important to start slow. Activities like walking, light yoga, and gentle cycling are good options. Light strength training can also build endurance over time. Always listen to your body and consult a doctor before starting any new exercise, especially if symptoms are severe.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex services align-self-stretch px-4 ftco-animate">
+            <div class="d-block services-wrap text-center">
+              <div class="img" style="background-image: url({% static 'index1/images/diet.jpeg' %});"></div>
+              <div class="media-body p-2 mt-3">
+                <h3 class="heading">Diet Program</h3>
+                <p>A diet for anemia includes iron-rich foods like meat, leafy greens, beans, and fortified cereals. Vitamin C-rich foods (citrus fruits, peppers) help absorb iron, while B12 (meat, dairy) and folate (greens, beans) support red blood cell production. Avoid coffee, tea, and high-calcium foods around iron-rich meals, as they can reduce absorption.</p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+    	</div>
+    </section>
+
+    <section class="ftco-section ftco-no-pt ftco-no-pb bg-light">
+			<div class="container">
+				<div class="row no-gutters">
+					<div class="col-md-5 p-md-5 img img-2 mt-5 mt-md-0" style="background-image: url({% static 'index1/images/about.jpeg' %});">
+					</div>
+					<div class="col-md-7 wrap-about py-4 py-md-5 ftco-animate">
+	          <div class="heading-section mb-5">
+	          	<div class="pl-md-5">
+		          	<span class="subheading mb-2" style="font-size: 24px; color: #ff5733;">Welcome to CellZest</span>
+		            <h2 class="mb-2">"Transforming Lives: Our Commitment to Anemia Management""</h2>
+	            </div>
+	          </div>
+	          <div class="pl-md-5">
+							<p>Welcome to CellZest, where we harness the power of data science to empower individuals in understanding and managing anemia.As a student pursuing an integrated degree in data science, I am passionate about leveraging technology and analytics to make a meaningful impact on health and nutrition</p>
+                            <p><a href="{% url 'about' %}" class="btn btn-primary p-3 px-xl-4 py-xl-3">Learn more</a></p>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+
+    <section class="ftco-section testimony-section bg-light">
+      <div class="container">
+        <div class="row justify-content-center pb-5 mb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+          	<span class="subheading mb-3">Testimonies</span>
+            <h2>Happy Clients &amp; Feedbacks</h2>
+          </div>
+        </div>
+        <div class="row ftco-animate">
+          <div class="col-md-12">
+            <div class="carousel-testimony owl-carousel">
+                <div class="item">
+                <div class="testimony-wrap d-flex">
+                  <div class="user-img" style="background-image: url({% static 'index1/images/si.jpeg' %})">
+                  </div>
+                  <div class="text pl-4">
+                  	<span class="quote d-flex align-items-center justify-content-center">
+                      <i class="fa fa-quote-left"></i>
+                    </span>
+                    <p>"This website is amazing! I was able to check my anemia severity easily, and the nutrition advice really helped me understand what foods to include in my diet!"</p>
+                    <p class="name">Sinta</p>
+                    <span class="position">collegue</span>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="testimony-wrap d-flex">
+                  <div class="user-img" style="background-image: url({% static 'index1/images/al.jpeg' %})">
+                  </div>
+                  <div class="text pl-4">
+                  	<span class="quote d-flex align-items-center justify-content-center">
+                      <i class="fa fa-quote-left"></i>
+                    </span>
+                    <p>"I love how simple and user-friendly the site is. The anemia test was easy to use, and the food recommendations were clear and practical!"</p>
+                    <p class="name">Alan </p>
+                    <span class="position">Businessman</span>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="testimony-wrap d-flex">
+                  <div class="user-img" style="background-image: url({% static 'index1/images/abhi1.jpeg' %})">
+                  </div>
+                  <div class="text pl-4">
+                  	<span class="quote d-flex align-items-center justify-content-center">
+                      <i class="fa fa-quote-left"></i>
+                    </span>
+                    <p>"Such a useful resource! I had no idea that certain foods could help with anemia, and this site gave me great dietary suggestions!"</p>
+                    <p class="name">Abhijay</p>
+                    <span class="position">student</span>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="testimony-wrap d-flex">
+                  <div class="user-img" style="background-image: url({% static 'index1/images/annamma.jpeg' %})">
+                  </div>
+                  <div class="text pl-4">
+                  	<span class="quote d-flex align-items-center justify-content-center">
+                      <i class="fa fa-quote-left"></i>
+                    </span>
+                    <p>"I found the information really useful, but a meal plan suggestion feature would make it even better.This website is amazing!"</p>
+                    <p class="name">Aneena </p>
+                    <span class="position">Businesswoman</span>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="testimony-wrap d-flex">
+                  <div class="user-img" style="background-image: url({% static 'index1/images/th.jpeg' %})">
+                  </div>
+                  <div class="text pl-4">
+                  	<span class="quote d-flex align-items-center justify-content-center">
+                      <i class="fa fa-quote-left"></i>
+                    </span>
+                    <p> "The site is great, but I wish there were more detailed explanations about how the severity is calculated. A little more medical insight would be helpful!"</p>
+                    <p class="name">Theertha </p>
+                    <span class="position">Student</span>
+                  </div>
+                </div>
+              </div>
+						</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+<!-- <section class="ftco-section">
+    	<div class="container">
+    		<div class="row justify-content-center pb-5 mb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+          	<span class="subheading">Other Services</span>
+            <h2>How it works</h2>
+          </div>
+        </div>
+    		<div class="row d-flex no-gutters">
+    			<div class="col-md-6 d-flex">
+    				<div class="img img-video d-flex align-self-stretch align-items-center justify-content-center justify-content-md-end mb-4 mb-sm-0" style="background-image:url({% static 'index1/images/about.jpg' %});">
+    				</div>
+    			</div>
+    			<div class="col-md-6 pl-md-5 py-md-5">
+    				<div class="services-2 w-100 d-flex">
+    					<div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-account"></span></div>
+    					<div class="text pl-4">
+    						<h4>Follow the program</h4>
+    						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+    					</div>
+    				</div>
+    				<div class="services-2 w-100 d-flex">
+    					<div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-skills"></span></div>
+    					<div class="text pl-4">
+    						<h4>Work for result</h4>
+    						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+    					</div>
+    				</div>
+    				<div class="services-2 w-100 d-flex">
+    					<div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-performance"></span></div>
+    					<div class="text pl-4">
+    						<h4>Eat healthy Food</h4>
+    						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+    					</div>
+    				</div>
+    				<div class="services-2 w-100 d-flex">
+    					<div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-event"></span></div>
+    					<div class="text pl-4">
+    						<h4>Enjoy your life</h4>
+    						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+    					</div>
+    				</div>
+	        </div>
+        </div>
+    	</div>
+</section> -->
+
+
+
+
+    <!-- <section class="ftco-section ftco-no-pb ftco-no-pt">
+      <div class="container">
+      	<div class="row">
+	      	<div class="col-md-12">
+	      		<div class="bg-secondary w-100 rounded p-4">
+	        		<div class="row">
+			          <div class="col-md-7 d-flex align-items-center">
+			            <h2 class="mb-3 mb-sm-0" style="color:black; font-size: 18px;">Subcribe for our weekly tips</h2>
+			          </div>
+			          <div class="col-md-5 d-flex align-items-center">
+			            <form action="#" class="subscribe-form">
+			              <div class="form-group d-flex">
+			                <input type="text" class="form-control" placeholder="Enter email address">
+			                <input type="submit" value="Subscribe" class="submit px-3">
+			              </div>
+			            </form>
+			          </div>
+		          </div>
+			      </div>
+			    </div>
+			  </div>
+      </div>
+    </section> -->
+
+
+
+   <footer class="footer">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-10 col-lg-6">
+                <div class="subscribe mb-5">
+                    <form action="#" class="subscribe-form">
+                        <!-- You can add input fields here if needed -->
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 col-lg-5">
+                <div class="row">
+                    <div class="col-md-12 col-lg-8 mb-md-0 mb-4">
+                        <h2 class="footer-heading"><a href="#" class="logo">Cell<span>Zest</span></a></h2>
+                        <p>It's for health, it's for life</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8 col-lg-7">
+                <div class="row">
+                    <div class="col-md-3 mb-md-0 mb-4 border-left">
+                        <h2 class="footer-heading">Links</h2>
+                        <ul class="list-unstyled">
+                            <li><a href="{% url 'home' %}" class="py-1 d-block">Home</a></li>
+                            <li><a href="{% url 'about' %}" class="py-1 d-block">About</a></li>
+                            <li><a href="{% url 'blog' %}" class="py-1 d-block">Blog</a></li>
+                            <li><a href="{% url 'contact' %}" class="py-1 d-block">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 col-lg-3 mb-4 mb-md-0">
+                        <h2 class="footer-heading">Have a Questions?</h2>
+                        <div class="block-23 mb-3">
+                            <ul>
+                                <li><span class="icon fa fa-map"></span><span class="text">123 Maple Street, Springfield, IL 63704, USA</span></li>
+                                <li><a href="#"><span class="icon fa fa-phone"></span><span class="text">+2 392 3929 210</span></a></li>
+                                <li><a href="#"><span class="icon fa fa-paper-plane"></span><span class="text">cellzest123@gmail.com</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="{% static 'index1/js/jquery.min.js' %}"></script>
+  <script src="{% static 'index1/js/jquery-migrate-3.0.1.min.js' %}"></script>
+  <script src="{% static 'index1/js/popper.min.js' %}"></script>
+  <script src="{% static 'index1/js/bootstrap.min.js' %}"></script>
+  <script src="{% static 'index1/js/jquery.easing.1.3.js' %}"></script>
+  <script src="{% static 'index1/js/jquery.waypoints.min.js' %}"></script>
+  <script src="{% static 'index1/js/jquery.stellar.min.js' %}"></script>
+  <script src="{% static 'index1/js/jquery.animateNumber.min.js' %}"></script>
+  <script src="{% static 'index1/js/bootstrap-datepicker.js' %}"></script>
+  <script src="{% static 'index1/js/jquery.timepicker.min.js' %}"></script>
+  <script src="{% static 'index1/js/owl.carousel.min.js' %}"></script>
+  <script src="{% static 'index1/js/jquery.magnific-popup.min.js' %}"></script>
+  <script src="{% static 'index1/js/scrollax.min.js' %}"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+  <script src="{% static 'index1/js/google-map.js' %}"></script>
+  <script src="{% static 'index1/js/main.js' %}"></script>
+
+
+
+  </body>
+</html>

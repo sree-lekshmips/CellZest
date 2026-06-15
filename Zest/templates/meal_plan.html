@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meal Plan</title>
+</head>
+<body style="font-family: Arial, sans-serif; background-color: #f0f8ff; padding: 20px; margin: 0;">
+    <!-- Heading -->
+    <h2 style="font-size: 40px; color: green; font-family: 'Georgia', serif; text-align: center; margin-bottom: 20px;">
+        Your Meal Plan for {{ severity }} Anemia ({{ dietary_habit }})
+    </h2>
+
+    <!-- Subheading -->
+    <h3 style="font-size: 28px; color: #333; margin-bottom: 15px;"><strong>Daily Meal Plan:</strong></h3>
+
+    <!-- Meal Plan List -->
+    <ul style="list-style-type: none; padding: 0;">
+        {% for meal in meal_plan %}
+            <li style="background-color: #e0f7fa; margin: 10px 0; padding: 10px; border-radius: 5px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+                {{ meal }}
+            </li>
+        {% endfor %}
+    </ul>
+
+    <!-- Go Back Button -->
+    <p style="text-align: center; margin-top: 20px;">
+        <a href="{% url 'index' %}" style="background-color: #4CAF50; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; display: inline-block;">
+            Go Back
+        </a>
+    </p>
+</body>
+</html>
